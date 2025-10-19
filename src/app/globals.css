@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #050505; /* deeper black */
+    --foreground: #f2f2f2; /* slightly brighter text */
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Container utilities */
+.container {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Gradients and accents inspired by Anthrogen's minimalism */
+.hero-gradient {
+  background: radial-gradient(1200px 600px at 50% -10%, rgba(255,255,255,0.08), rgba(255,255,255,0) 60%),
+              radial-gradient(800px 400px at 80% 10%, rgba(45,212,191,0.08), rgba(45,212,191,0) 60%),
+              radial-gradient(800px 400px at 20% 10%, rgba(147,197,253,0.08), rgba(147,197,253,0) 60%);
+}
+
+.subtle-border {
+  border: 1px solid rgba(255,255,255,0.08);
+}
