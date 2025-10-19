@@ -9,13 +9,13 @@ export default function Home() {
       </header>
 
       <main className="mt-10 max-w-[760px] flex-1">
-        <h1 className="text-[20px] leading-[1.2] font-semibold mb-7">AI agents for small and medium scale businesses.</h1>
+        <h1 className="text-[20px] leading-[1.2] font-semibold mb-2">AI agents for small and medium scale businesses.</h1>
 
         <p className="text-[16px] leading-[1.55] mb-5">
           We build Artificial Intelligence agents that help SMBs grow their business.
         </p>
 
-        <section className="mt-9">
+        <section className="mt-8">
           <h2 className="uppercase tracking-wide font-semibold text-[14px]">Products</h2>
           <div className="mt-4">
             <h3 className="text-[16px] font-semibold mb-2">Sally — AI Conversational Agents for SMBs</h3>
