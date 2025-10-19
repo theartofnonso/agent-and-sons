@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="px-16 py-12">
+    <div className="px-16 py-12 min-h-screen flex flex-col">
       <header className="flex items-center">
         {/* Simple square mark approximating the screenshot logo mark */}
         <div className="h-4 w-4 bg-black" />
@@ -8,7 +8,7 @@ export default function Home() {
         <div className="font-bold tracking-tight text-[20px]">Agent & Sons</div>
       </header>
 
-      <main className="mt-10 max-w-[760px]">
+      <main className="mt-10 max-w-[760px] flex-1">
         <h1 className="text-[20px] leading-[1.2] font-semibold mb-7">AI agents for small and medium scale businesses.</h1>
 
         <p className="text-[16px] leading-[1.55] mb-5">
@@ -27,11 +27,13 @@ export default function Home() {
             </p>
           </div>
         </section>
+      </main>
 
-        <p className="mt-6">
+      <footer className="mt-10">
+        <p>
           <a href="mailto:founders@agentandsons.com" className="underline underline-offset-4">Contact Us.</a>
         </p>
-      </main>
+      </footer>
     </div>
   );
 }
