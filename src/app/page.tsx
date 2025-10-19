@@ -9,22 +9,23 @@ export default function Home() {
       </header>
 
       <main className="mt-10 max-w-[760px] flex-1">
-        <h1 className="text-[20px] leading-[1.2] font-semibold mb-2">AI agents for small and medium scale businesses.</h1>
+        <h1 className="text-md leading-[1.2] font-semibold mb-2">AI agents for small and medium scale businesses.</h1>
 
-        <p className="text-[16px] leading-[1.55] mb-5">
+        <p className="text-sm leading-[1.55] mb-5">
           We build Artificial Intelligence agents that help SMBs grow their business.
         </p>
 
         <section className="mt-8">
           <h2 className="uppercase tracking-wide font-semibold text-[14px]">Products</h2>
           <div className="mt-4">
-            <h3 className="text-[16px] font-semibold mb-2">Sally — AI Conversational Agents for SMBs</h3>
-            <p className="text-[16px] leading-[1.55]">
+            <h3 className="text-md font-semibold mb-2">Sally — AI Conversational Agents for SMBs</h3>
+            <p className="text-sm leading-[1.55]">
               Sally is an always-on conversational agent that engages prospects 24/7 across chat and voice.
               She captures leads, asks the right qualifying questions, and routes them directly into your CRM or sales workflow — saving your team time and accelerating conversions.
-              {" "}
-              <a href="https://sally.agentandsons.com" className="underline underline-offset-4">Learn more → /sally</a>
             </p>
+            <div className="mt-2">
+              <a href="/sally" target="_blank" className="text-sm underline underline-offset-4">Learn more →</a>
+            </div>
           </div>
         </section>
       </main>
