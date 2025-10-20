@@ -16,11 +16,13 @@ export default function Page() {
         "Expensive sales teams or 24/7 staff.",
     ]
     const SOLUTIONS = [
-        "Instant Engagement",
         "Smart Qualification",
         "Seamless Booking",
+        "Customer Profiling",
+        "Intent Signals",
         "Automated Nurture",
         "Sales Support",
+        "Sentiment Analysis",
         "Works 24/7",
     ]
     return (
@@ -46,10 +48,10 @@ export default function Page() {
                             <span className="hidden md:inline">Works 24/7</span>
                         </div>
                         <h1 className="text-balance text-3xl font-semibold leading-tight md:text-4xl">
-                            <span className="font-mono">AI Conversational Agents</span>{" "}for Your Business
+                            <span className="font-mono">Conversational AI Agents</span>{" "}for Your Business
                         </h1>
                         <p className="text-pretty text-sm text-muted-foreground md:text-base">
-                            Voice + Chat agents that book, qualify, nurture, and support your leads 24/7 — so you convert more visitors into paying clients with less work.
+                            Voice + Chat agents that qualify, nurture, and support your leads 24/7 — so you convert more visitors into paying clients with less work.
                         </p>
                         <div className="flex flex-wrap items-center gap-2">
                             <Button asChild size="sm" variant="ghost">
@@ -125,18 +127,16 @@ export default function Page() {
                     <div className="mb-4 inline-flex items-center gap-2 rounded border border-black/15 bg-black/5 px-2 py-1 text-xs uppercase tracking-wider">🤖 The Solution — Conversational AI Agents</div>
                     <Card className="border-none shadow-none">
                         <CardHeader className="pb-2">
-                            <CardTitle className="text-base">AI Booking + Sales Agent 🗣️💬</CardTitle>
+                            <CardTitle className="text-base">Never sleeps, never forgets, never drops a lead.</CardTitle>
                         </CardHeader>
                         <CardContent className="text-sm">
                             <p className="text-muted-foreground">Your always-on AI rep that turns website visitors into paying clients.</p>
                             <ul className="mt-4 space-y-2">
                                 {[
-                                    "⚡ Instant Engagement: Greets leads via voice or chat the second they land.",
-                                    "🧭 Smart Qualification: Asks discovery questions, filters out time-wasters.",
-                                    "📅 Seamless Booking: Syncs with calendars, schedules automatically.",
-                                    "📈 Automated Nurture: Follows up with no-shows or hesitant leads.",
-                                    "🛍️ Sales Push: Handles common objections, sends offers, drives conversion.",
-                                    "🧠 Works 24/7 — never sleeps, never forgets, never drops a lead.",
+                                    "📅 Seamless Booking: Syncs with existing booking systems.",
+                                    "🧠 Customer Profiling: Profiles leads based on their responses.",
+                                    "⚡ Intent Signals: Analyzes leads' intentions.",
+                                    "📊 Sentiment Analysis: Analyzes leads' sentiment based on their responses.",
                                 ].map((li) => (
                                     <li key={li} className="flex items-start gap-2">
                                         <span>{li}</span>
