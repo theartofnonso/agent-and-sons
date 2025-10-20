@@ -9,10 +9,10 @@ export default function Home() {
       </header>
 
       <main className="mt-10 max-w-[760px] flex-1">
-        <h1 className="text-md leading-[1.2] font-semibold mb-2">AI agents for small and medium scale businesses.</h1>
+        <h1 className="text-md leading-[1.2] font-semibold mb-2">AI agents for small and medium scale enterprises.</h1>
 
         <p className="text-sm leading-[1.55] mb-5">
-          We build Artificial Intelligence agents that help SMBs grow their business.
+          We build Artificial Intelligence agents that help SMEs grow their business.
         </p>
 
         <section className="mt-8">
