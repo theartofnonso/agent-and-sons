@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Agent & Sons",
-  description: "Agent & Sons is building the network behind agentic intelligence.",
+  description: "We build Artificial Intelligence agents that help SMEs grow their business.",
 };
 
 export default function RootLayout({
@@ -24,6 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta property="og:url" content="https://agentandsons.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Agent & Sons" />
+        <meta property="og:description" content="We build Artificial Intelligence agents that help SMEs grow their business." />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
