@@ -18,7 +18,7 @@ export default function Home() {
         <section className="mt-8">
           <h2 className="uppercase tracking-wide font-semibold text-[14px]">Products</h2>
           <div className="mt-4">
-            <h3 className="text-md font-semibold mb-2">Sally — Conversational AI Agents for SMBs</h3>
+            <h3 className="text-md font-semibold mb-2">Sally — Conversational AI Agents for SMEs</h3>
             <p className="text-sm leading-[1.55]">
               An always-on conversational agent that captures and qualifies leads, then routes them directly into your CRM or sales workflow. Saving your business time and accelerating conversions.
             </p>
