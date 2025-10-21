@@ -51,7 +51,7 @@ export default function Page() {
                             <span className="font-mono">Conversational AI Agents</span>{" "}for Your Business
                         </h1>
                         <p className="text-pretty text-sm text-muted-foreground md:text-base">
-                            Voice + Chat agents that qualify, nurture, and support your leads 24/7 — so you convert more visitors into paying clients with less work.
+                        Sally captures and qualifies leads, then routes them directly into your CRM or sales workflow. Saving your business time and accelerating conversions.
                         </p>
                         <div className="flex flex-wrap items-center gap-2">
                             <Button asChild size="sm" variant="ghost">
@@ -130,13 +130,14 @@ export default function Page() {
                             <CardTitle className="text-base">Never sleeps, never forgets, never drops a lead.</CardTitle>
                         </CardHeader>
                         <CardContent className="text-sm">
-                            <p className="text-muted-foreground">Your always-on AI rep that turns website visitors into paying clients.</p>
+                            <p className="text-muted-foreground">Your always-on AI sales rep that turns website visitors into paying clients.</p>
                             <ul className="mt-4 space-y-2">
                                 {[
                                     "📅 Seamless Booking: Syncs with existing booking systems.",
                                     "🧠 Customer Profiling: Profiles leads based on their responses.",
                                     "⚡ Intent Signals: Analyzes leads' intentions.",
-                                    "📊 Sentiment Analysis: Analyzes leads' sentiment based on their responses.",
+                                    "📊 Sentiment Analysis: Understands leads' sentiment based on their responses.",
+                                    "🔍 Highlights leads' pain points and needs.",
                                 ].map((li) => (
                                     <li key={li} className="flex items-start gap-2">
                                         <span>{li}</span>

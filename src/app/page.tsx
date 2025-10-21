@@ -20,8 +20,7 @@ export default function Home() {
           <div className="mt-4">
             <h3 className="text-md font-semibold mb-2">Sally — AI Conversational Agents for SMBs</h3>
             <p className="text-sm leading-[1.55]">
-              Sally is an always-on conversational agent that engages prospects 24/7 across chat and voice.
-              She captures leads, asks the right qualifying questions, and routes them directly into your CRM or sales workflow — saving your team time and accelerating conversions.
+              Sally is an always-on conversational agent that captures and qualifies leads, then routes them directly into your CRM or sales workflow. Saving your business time and accelerating conversions.
             </p>
             <div className="mt-2">
               <a href="/sally" target="_blank" className="text-sm underline underline-offset-4">Learn more →</a>
