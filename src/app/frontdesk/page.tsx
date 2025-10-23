@@ -31,7 +31,7 @@ export default function Page() {
                 <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-4">
                     <Link href="/" aria-label="Home" className="flex items-center gap-2">
                         <Sparkles className="h-5 w-5" aria-hidden="true" />
-                        <span className="text-sm font-semibold tracking-tight">Frontdesk</span>
+                        <span className="text-sm font-semibold tracking-tight">FrontDesk</span>
                     </Link>
                 </div>
             </header>
@@ -50,7 +50,7 @@ export default function Page() {
                             <span className="font-mono">Conversational AI Agent</span>{" "}for Your Business
                         </h1>
                         <p className="text-pretty text-sm text-muted-foreground md:text-base">
-                        Frontdesk captures and qualifies leads, then routes them directly into your CRM or sales workflow. Saving your business time and accelerating conversions.
+                        FrontDesk captures and qualifies leads, then routes them directly into your CRM or sales workflow. Saving your business time and accelerating conversions.
                         </p>
                         <div className="flex flex-wrap items-center gap-2">
                             <Button asChild size="sm" variant="ghost">
@@ -168,7 +168,7 @@ export default function Page() {
                                             <Bot className="h-3.5 w-3.5" aria-hidden="true" />
                                         </div>
                                         <div className="max-w-[85%] rounded-md border border-black/15 bg-background p-2 text-sm">
-                                            Hi, I’m Frontdesk. How can I help today?
+                                            Hi, I’m Sally. How can I help today?
                                         </div>
                                     </div>
                                     {/* User message */}
@@ -212,7 +212,7 @@ export default function Page() {
                                         <Mic className="h-3.5 w-3.5" aria-hidden="true" /> Ready to take your call
                                     </div>
                                     <div className="mt-4 text-center text-sm text-muted-foreground">
-                                        Frontdesk is always ready to take your call and help you with your questions.
+                                        FrontDesk is always ready to take your call and help you with your questions.
                                     </div>
                                     <div className="mt-4">
                                         <Button asChild size="sm" aria-label="Place call to our AI agent">
@@ -234,7 +234,7 @@ export default function Page() {
                 <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 px-4 py-8 text-xs text-muted-foreground md:flex-row">
                     <div className="flex items-center gap-2">
                         <Sparkles className="h-4 w-4" aria-hidden="true" />
-                        <span>© {new Date().getFullYear()} Frontdesk - Agent & Sons</span>
+                        <span>© {new Date().getFullYear()} FrontDesk - Agent & Sons</span>
                     </div>
                     <nav aria-label="Footer">
                         <ul className="flex flex-wrap items-center gap-4">
