@@ -1,5 +1,6 @@
 import React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight, CircleCheck, Sparkles, X, PhoneCall, Phone, Bot, User, Mic, MessageSquare } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -27,7 +28,7 @@ export default function Page() {
     return (
         <main className="min-h-screen w-full">
             {/* Top Nav */}
-            <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+            <header className="sticky top-0 z-40 w-full bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
                 <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-4">
                     <Link href="/" aria-label="Home" className="flex items-center gap-2">
                         <Sparkles className="h-5 w-5" aria-hidden="true" />
@@ -224,6 +225,16 @@ export default function Page() {
                                 </div>
                             </CardContent>
                         </Card>
+                    </div>
+                </div>
+            </section>
+
+            {/* Powered by (logos only) */}
+            <section>
+                <div className="mx-auto w-full max-w-6xl px-4 py-10 md:py-16 text-center">
+                    <h2 className="uppercase tracking-wide font-semibold text-[14px] mb-4">Powered by</h2>
+                    <div className="flex items-center justify-center">
+                        <Image src="/elevenlabs-logo-black.svg" alt="ElevenLabs" width={180} height={40} priority />
                     </div>
                 </div>
             </section>
