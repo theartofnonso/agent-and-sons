@@ -30,9 +30,21 @@ export default function Home() {
       </main>
 
       <footer className="mt-10">
-        <p>
-          <a href="mailto:founders@agentandsons.com" className="underline underline-offset-4">Contact Us.</a>
-        </p>
+        <div className="flex flex-col gap-2">
+          <nav aria-label="Social links" className="text-sm">
+            <ul className="flex items-center gap-4">
+              <li>
+                <a href="mailto:founders@agentandsons.com" className="underline underline-offset-4">Email</a>
+              </li>
+              <li>
+                <a href="https://x.com/agentandsons" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">X</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/agent-and-sons" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">LinkedIn</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </footer>
     </div>
   );

@@ -245,11 +245,13 @@ export default function Page() {
                 <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 px-4 py-8 text-xs text-muted-foreground md:flex-row">
                     <div className="flex items-center gap-2">
                         <Sparkles className="h-4 w-4" aria-hidden="true" />
-                        <span>© {new Date().getFullYear()} FrontDesk - Agent & Sons</span>
+                        <span>© {new Date().getFullYear()} FrontDesk - <Link href="/" className="underline underline-offset-4">Agent & Sons</Link></span>
                     </div>
                     <nav aria-label="Footer">
                         <ul className="flex flex-wrap items-center gap-4">
-                            <li><Link href="#" className="hover:text-foreground">founders@agentandsons.com</Link></li>
+                            <li><Link href="mailto:founders@agentandsons.com" className="hover:text-foreground underline underline-offset-4">Email</Link></li>
+                            <li><Link href="https://x.com/agentandsons" target="_blank" rel="noopener noreferrer" className="hover:text-foreground underline underline-offset-4">X</Link></li>
+                            <li><Link href="https://www.linkedin.com/company/agent-and-sons" target="_blank" rel="noopener noreferrer" className="hover:text-foreground underline underline-offset-4">LinkedIn</Link></li>
                         </ul>
                     </nav>
                 </div>
