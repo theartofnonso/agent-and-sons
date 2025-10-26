@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { Ripple } from "@/components/ui/shadcn-io/ripple"
+import { FlickeringGrid } from "@/components/ui/shadcn-io/flickering-grid"
 
 export default function Page() {
     const PROBLEMS = [
@@ -125,7 +126,7 @@ export default function Page() {
             </div>
 
             {/* Solution: AI Growth Agent Suite - Tier 1 */}
-            <section id="solution" className="border-b">
+            <section id="solution" className="">
                 <div className="mx-auto w-full max-w-6xl px-4 py-10 md:py-16">
                     <div className="mb-4 inline-flex items-center gap-2 rounded border border-black/15 bg-black/5 px-2 py-1 text-xs uppercase tracking-wider">🤖 The Solution — Conversational AI Agents</div>
                     <Card className="border-none shadow-none">
@@ -152,92 +153,32 @@ export default function Page() {
                 </div>
             </section>
 
-            {/* Demo section: Chat and Call */}
-            <section id="demo">
-                <div className="mx-auto w-full max-w-6xl px-4 py-10 md:py-16">
-                <div className="mb-4 inline-flex items-center gap-2 rounded border border-black/15 bg-black/5 px-2 py-1 text-xs uppercase tracking-wider">🚀 See our agents in action</div>
-                    <p className="mt-2 max-w-3xl text-sm text-muted-foreground">Try a chat conversation and preview a call flow with our AI agents.</p>
+            {/* Product demos (screenshots placeholders) */}
+            <section id="product-demos" className="relative overflow-hidden">
+                <FlickeringGrid className="absolute inset-0 -z-10" squareSize={4} gridGap={6} flickerChance={0.1} color="rgb(0,0,0)" maxOpacity={0.06} />
+                <div className="relative mx-auto w-full max-w-6xl px-4 py-10 md:py-16">
+                    <div className="mb-6 inline-flex items-center gap-2 rounded border border-black/15 bg-black/5 px-2 py-1 text-xs uppercase tracking-wider">Product demos</div>
 
-                    <div className="mt-6 grid gap-6 md:grid-cols-2">
-                        {/* Chat demo */}
-                        <Card>
-                            <CardHeader className="pb-2">
-                                <CardTitle className="text-base inline-flex items-center gap-2"><MessageSquare className="h-4 w-4" /> Chat demo</CardTitle>
-                            </CardHeader>
-                            <CardContent>
-                                <div aria-live="polite" className="flex max-h-72 flex-col gap-3 overflow-hidden rounded-md bg-background p-3">
-                                    {/* Agent message */}
-                                    <div className="flex items-start gap-2">
-                                        <div className="mt-0.5 flex h-6 w-6 items-center justify-center rounded-full border bg-background">
-                                            <Bot className="h-3.5 w-3.5" aria-hidden="true" />
-                                        </div>
-                                        <div className="max-w-[85%] rounded-md border border-black/15 bg-background p-2 text-sm">
-                                            Hi, I’m Sally. How can I help today?
-                                        </div>
-                                    </div>
-                                    {/* User message */}
-                                    <div className="ml-auto flex items-start gap-2">
-                                        <div className="max-w-[85%] rounded-md border border-black/15 bg-background p-2 text-sm">
-                                            Can you book a consultation for tomorrow afternoon?
-                                        </div>
-                                        <div className="mt-0.5 flex h-6 w-6 items-center justify-center rounded-full border bg-background">
-                                            <User className="h-3.5 w-3.5" aria-hidden="true" />
-                                        </div>
-                                    </div>
-                                    {/* Agent message */}
-                                    <div className="flex items-start gap-2">
-                                        <div className="mt-0.5 flex h-6 w-6 items-center justify-center rounded-full border bg-background">
-                                            <Bot className="h-3.5 w-3.5" aria-hidden="true" />
-                                        </div>
-                                        <div className="max-w-[85%] rounded-md border border-black/15 bg-background p-2 text-sm">
-                                            Absolutely. I see availability at 2:30 PM and 4:00 PM. Which works?
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="mt-3 flex items-center gap-2">
-                                    <input
-                                        aria-label="Type a message"
-                                        placeholder="Type a message…"
-                                        className="flex-1 rounded-md border border-black/15 bg-background px-3 py-2 text-sm outline-hidden focus-visible:ring-2 focus-visible:ring-black/40"
-                                    />
-                                    <Button size="sm" type="button" aria-label="Send message">Send</Button>
-                                </div>
-                            </CardContent>
-                        </Card>
-
-                        {/* Call demo */}
-                        <Card>
-                            <CardHeader className="pb-2">
-                                <CardTitle className="text-base inline-flex items-center gap-2"><PhoneCall className="h-4 w-4" /> Call our agent</CardTitle>
-                            </CardHeader>
-                            <CardContent>
-                                <div className="relative flex flex-col items-center justify-center gap-3 rounded-md bg-background p-6">
-                                    <div className="inline-flex items-center gap-2 rounded-full border border-black/15 px-3 py-1 text-xs">
-                                        <Mic className="h-3.5 w-3.5" aria-hidden="true" /> Ready to take your call
-                                    </div>
-                                    <div className="mt-4 text-center text-sm text-muted-foreground">
-                                        FrontDesk is always ready to take your call and help you with your questions.
-                                    </div>
-                                    <div className="mt-4">
-                                        <Button asChild size="sm" aria-label="Place call to our AI agent">
-                                            <a href="#" className="inline-flex items-center gap-2">
-                                                <Phone className="h-4 w-4" aria-hidden="true" /> Place call
-                                            </a>
-                                        </Button>
-                                    </div>
-                                </div>
-                            </CardContent>
-                        </Card>
+                    {/* Row 1: Text left, image right */}
+                     <div className="grid items-center gap-8 md:grid-cols-2">
+                        <div className="flex flex-col gap-3">
+                            <h3 className="text-3xl font-semibold leading-tight md:text-4xl">Your AI front desk.</h3>
+                            <p className="text-sm text-muted-foreground">No more manual lead capture. No more missed opportunities.</p>
+                        </div>
+                        <div className="aspect-[16/9] w-full overflow-hidden rounded-md bg-background relative ">
+                            <Image src="/frontdesk-overview.png" alt="FrontDesk overview dashboard" fill className="object-cover object-right rounded-md" />
+                        </div>
                     </div>
-                </div>
-            </section>
 
-            {/* Powered by (logos only) */}
-            <section>
-                <div className="mx-auto w-full max-w-6xl px-4 py-10 md:py-16 text-center">
-                    <h2 className="uppercase tracking-wide font-semibold text-[14px] mb-4">Powered by</h2>
-                    <div className="flex items-center justify-center">
-                        <Image src="/elevenlabs-logo-black.svg" alt="ElevenLabs" width={180} height={40} priority />
+                    {/* Row 2: Image left, text right */}
+                    <div className="mt-10 grid items-center gap-8 md:grid-cols-2">
+                        <div className="order-2 aspect-[16/9] w-full overflow-hidden rounded-md bg-background relative md:order-1">
+                            <Image src="/frontdesk-prospect-analysis.png" alt="FrontDesk prospect analysis" fill className="object-cover object-right rounded-md" />
+                        </div>
+                        <div className="order-1 flex flex-col gap-3 md:order-2">
+                            <h3 className="text-2xl font-semibold leading-tight md:text-3xl">Analyze prospects at a glance.</h3>
+                            <p className="text-sm text-muted-foreground">See pains, outcomes, objections and suggested next steps from each conversation.</p>
+                        </div>
                     </div>
                 </div>
             </section>
