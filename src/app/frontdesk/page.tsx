@@ -54,6 +54,9 @@ export default function Page() {
                         FrontDesk captures and qualifies leads, then routes them directly into your CRM or sales workflow. Saving your business time and accelerating conversions.
                         </p>
                         <div className="flex flex-wrap items-center gap-2">
+                            <Button asChild size="sm" aria-label="Book a demo">
+                                <a href="https://calendly.com/founders-agentandsons/30min" target="_blank" rel="noopener noreferrer">Book a demo</a>
+                            </Button>
                             <Button asChild size="sm" variant="ghost">
                                 <Link href="#problem" className="inline-flex items-center gap-1">
                                     <ArrowRight className="h-4 w-4" aria-hidden="true" />
